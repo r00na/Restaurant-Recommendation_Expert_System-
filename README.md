@@ -51,10 +51,10 @@ def recommend_jordanian(self):
 ## 🖼️ System Output
 
 ### Input Screen
-![Input Screen](path/to/inputt.png)
+![Input Screen](images/inputt.png)
 
 ### Output Screen
-![Output Screen](path/to/outputt.png)
+![Output Screen](images/outputt.png)
 
 
 ##  How to Run
