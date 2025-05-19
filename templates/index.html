@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amman Restaurant Recommender</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #e7e2e8;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+    
+            form {
+                background-color: #fdfdfd; 
+                padding: 30px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: #555;
+            }
+    
+            select, input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                box-sizing: border-box;
+            }
+    
+            input[type="submit"] {
+                background-color: #800080; /* Purple button */
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                width: 100%;
+            }
+    
+            input[type="submit"]:hover {
+                background-color: #9932CC; /* Darker purple on hover */
+            }
+        </style>
+</head>
+<body>
+
+<form method="POST" action="/">
+    <h2>Amman Restaurant Recommender</h2>
+    <label for="cuisine">What type of cuisine are you in the mood for?</label>
+    <select name="cuisine" id="cuisine">
+        <option value="Jordanian">Jordanian</option>
+        <option value="Italian">Italian</option>
+        <option value="pizza">Pizza</option>
+        <option value="seafood">Seafood</option>
+        <option value="eastern dishes">Eastern Dishes</option>
+        <option value="western dishes">Western Dishes</option>
+        <option value="shawarma">Shawarma</option>
+        <option value="falafel">Falafel</option>
+    </select>
+
+    <label for="price">What is your price range?</label>
+    <select name="price" id="price">
+        <option value="budget">Budget</option>
+        <option value="mid-range">Mid-range</option>
+    </select>
+
+    <label for="area">Which area do you prefer?</label>
+    <select name="area" id="area">
+        <option value="downtown">Downtown</option>
+        <option value="west amman">West Amman</option>
+        <option value="east amman">East Amman</option>
+    </select>
+
+    <label for="ambiance">Ambiance:</label>
+    <select name="ambiance" id="ambiance">
+        <option value="casual">Casual</option>
+        <option value="fine_dining">Fine Dining</option>
+        <option value="family">Family</option>
+    </select>
+
+    <label for="special_features">Special Features:</label>
+    <select name="special_features" id="special_features">
+        <option value="nothing">None</option>
+        <option value="live music">Live Music</option>
+        <option value="rooftop view">Rooftop View</option>
+        <option value="vegan">Vegan</option>
+    </select>
+
+    <label for="family_friendly">Family Friendly:</label>
+    <select name="family_friendly" id="family_friendly">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="wifi">Wi-Fi:</label>
+    <select name="wifi" id="wifi">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="hours">Hours:</label>
+    <select name="hours" id="hours">
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+    </select>
+
+    <input type="submit" value="Recommend">
+</form>
+
+</body>
+</html>
